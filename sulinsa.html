@@ -4,41 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>덕담 하나 주면 안 잡아 먹지!</title>
     <style>
-        .box {
-            background-color: royalblue;
-            width: 800px;
-            height: 800px;
+        @font-face {
+            font-family: 'Cafe24Ssurround';
+            src: url('https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/Cafe24Ssurround.woff') format('woff');
+        }
+
+        * {
+            font-family: 'Cafe24Ssurround';
+        }
+
+
+
+        .background {
+            background-image: url('https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/bg_default.png');
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vw;
+            max-width: 450px;
+            margin:auto;
+
+        }
+
+        body,h1,p{
+            margin: 0;
+
+        }
+
+        .title{
+            color: #3f3732;
 
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
+            padding-top: 5vh;
+        }
+
+        .title > h1 {
+            font-size: 22px;
+            background-color: white;
+            padding: 8px 16px;
+            border-radius: 16px;
+
+            margin-bottom: 16px;
 
         }
-        .first {
-            background-color: skyblue;
-            width: 300px;
-            height: 300px;
 
-            margin-bottom: 100px;
+        .title>p{
+            font-size: 18px;
+        }
+
+        .title>p>span{
+            font-size: 22px;
 
         }
-        .second {
-            background-color: purple;
-            width: 300px;
-            height: 300px;
 
-        }
     </style>
-
 </head>
 <body>
-    <div class="box">
-        <div class="first">첫번째 박스</div>
-        <div class="second">두번째 박스</div>
+    <div class="background">
+        <div class="title">
+            <h1>덕담 하나 주면 안 잡아 먹지!</h1>
+            <p>수민님이 받은 덕담: <span>2개</span></p>
+        </div>
+
+
     </div>
 </body>
 </html>
